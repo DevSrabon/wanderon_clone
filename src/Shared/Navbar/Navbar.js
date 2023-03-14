@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css"
+import "./Navbar.css";
 const Navbar = () => {
-    const [hamburger, setHamburger] = useState(true)
-    const [navbar, setNavbar] = useState(false)
+	const [hamburger, setHamburger] = useState(true);
+	const [navbar, setNavbar] = useState(false);
 	const menuItems = (
 		<>
 			<Link to={"/"} className="relative group">
@@ -23,19 +23,15 @@ const Navbar = () => {
 				<span className="absolute -bottom-1 left-0 w-0 h-[3px] bg-white transition-all rounded-xl duration-300 group-hover:w-full"></span>
 			</Link>
 		</>
-    );
-    const changeBackground = () => { 
-        
-        if (window.scrollY > 10) { 
-            setNavbar(true)
-        }
-        else {
-            
-            setNavbar(false)
-        }
-        
-    }
-window.addEventListener('scroll', changeBackground)
+	);
+	const changeBackground = () => {
+		if (window.scrollY > 10) {
+			setNavbar(true);
+		} else {
+			setNavbar(false);
+		}
+	};
+	window.addEventListener("scroll", changeBackground);
 	return (
 		<nav
 			className={`${
@@ -47,15 +43,18 @@ window.addEventListener('scroll', changeBackground)
 					alt=""
 					className="ml-[4vh] md:ml-[4vh] w-[5vh] h-[5vh] md:w-[8vh] md:h-[8vh]"
 				/>
-			</div>
-			<div className="text-[1vw] flex">
+            </div>
+            <div className="flex items-center">
 				<img
 					src="https://www.wanderon.in/svg/nav/phone.svg"
 					alt=""
-					className="h-[1.3vw] mr-[1vh]"
+					className="h-[3.3vw] mr-[1vh]"
 				/>
+
+			<div className="text-[3vw]">
 				+88-01864361681
 			</div>
+            </div>
 			<div className="hidden lg:block">
 				<ul className="uppercase flex space-x-9 pr-[18vh] cursor-pointer text-[1.8vh] ">
 					{menuItems}
