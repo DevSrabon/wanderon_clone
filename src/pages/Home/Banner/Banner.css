@@ -47,7 +47,7 @@
         }
         .coverHighlightText{
                 font-size: 1.5vw;
-                    font-weight: 200;
+                    font-weight: 200 !important;
                     color: white;
                     text-align: center;
         }
