@@ -1,0 +1,19 @@
+.hover-effect>li {
+    position: relative;
+    letter-spacing: 1px;
+}
+  .hover-effect>li::after {
+    content: "";
+    background-color: #ff004f;
+    height: 3px;
+    left: 0;
+    bottom: -5px;
+    border-radius: 0.75rem;
+    position: absolute;
+    transition: all 2s;
+      /* @apply content-[''] bg-[#ff004f] h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl absolute duration-300; */
+  }
+  .hover-effect>li:hover::after {
+    width: 100%;
+      
+  }
