@@ -1,6 +1,7 @@
 .mobile-menu {
     right: -200%;
     transition: 0.5s ease-in-out;
+    background-color: #fff !important;
 }
 
 .mobile-menu.active {
@@ -13,4 +14,7 @@
 
 .mobile-menu ul li:hover ul {
     display: block;
+}
+.active{
+    background-color: #000;
 }
