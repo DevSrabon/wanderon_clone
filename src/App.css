@@ -1,0 +1,15 @@
+.btn-position{
+    position: fixed;
+    bottom: 35px;
+    right: 20px;
+    z-index: 50;
+    height: 40px;
+    width: 40px;
+    border: 2px solid #333;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+.btn-style{
+    
+}
