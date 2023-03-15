@@ -48,12 +48,12 @@ const Navbar = () => {
 				<img
 					src="https://www.wanderon.in/svg/nav/phone.svg"
 					alt=""
-					className="h-[3.3vw] mr-[1vh]"
+					className="h-[3.3vw] md:h-[1.3vw] mr-[1vh]"
 				/>
 
-			<div className="text-[3vw]">
+			<a href="tel:+8801864-361681" className="text-[3vw] md:text-[1vw]">
 				+88-01864361681
-			</div>
+			</a>
             </div>
 			<div className="hidden lg:block">
 				<ul className="uppercase flex space-x-9 pr-[18vh] cursor-pointer text-[1.8vh] ">

@@ -1,11 +1,39 @@
 import React from "react";
 import "./Banner.css";
+import Typewriter from "typewriter-effect";
 const Banner = () => {
 	return (
 		<div className="billy">
-			<div className="heading">Weekend Getaways</div>
-			<div className="subheading">Weekend Trips From Delhi</div>
-			<div className="images">
+			<div className="heading">India's Coolest Travel Community</div>
+			<div className="subheading">
+				<Typewriter
+					options={{
+						strings: [
+							" Creating Stories",
+							" Fulfilling Adventure",
+							" Connecting People",
+						],
+						autoStart: true,
+						loop: true,
+					}}
+				/>
+			</div>
+			<div className="search-container">
+				<div className="search-field">
+					<input
+						type="input"
+						autoComplete="off"
+						name="search"
+						placeholder="Where do you wanna go?"
+					/>
+					<img
+						src="https://www.wanderon.in/svg/search.svg"
+						alt=""
+						className=" w-[10vw] h-[10vw] sm:w-[4vw] sm:h-[4vw] rounded-r-md -ml-[4vw] bg-[#0a9e88]"
+					/>
+				</div>
+			</div>
+			<div className="images-container flex mb-[6vh]">
 				<div className="coverHighlight">
 					<img src="https://www.wanderon.in/svg/cover-travellers.svg" alt="" />
 					<div className="coverHighlightText">
