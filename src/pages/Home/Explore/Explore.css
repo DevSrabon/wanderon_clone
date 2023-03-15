@@ -1,0 +1,47 @@
+.explore-container {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: 48px;
+}
+
+.explore-container>h1 {
+    text-transform: capitalize;
+    font-size: 2.2vw;
+    font-weight: 600;
+    color: rgb(10, 158, 136)
+}
+
+.explore-card-container {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 64px;
+}
+
+.explore-card-container>a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.explore-card {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    height: 9vw;
+}
+.explore-card>img {
+            height: 5vw ;
+}
+.explore-card>p {
+        width: 10vw;
+            font-size: 1.2vw;
+            font-weight: 600;
+            color: rgb(58, 58, 58);
+            text-transform: uppercase;
+            text-align: center;
+}
