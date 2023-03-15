@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "../../App.css"
 const ScrollToApp = () => {
 	const [showScrollApp, setShowScrollApp] = useState(false);
 
@@ -12,7 +13,22 @@ const ScrollToApp = () => {
             }
         })
 	}, []);
-    return <>{showScrollApp && <div className="btn-position"><img src="https://www.wanderon.in/svg/call-icon/whatsapp.svg" alt="" /></div>}</>;
+    return (
+			<>
+				{showScrollApp && (
+					<a
+						rel="noreferrer"
+						href="https://wa.me/01864361681"
+						target={"_blank"}
+						className="btn-position">
+						<img
+							src="https://www.wanderon.in/svg/call-icon/whatsapp.svg"
+							alt=""
+						/>
+					</a>
+				)}
+			</>
+		);
 };
 
 export default ScrollToApp;
