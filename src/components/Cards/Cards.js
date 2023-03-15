@@ -7,7 +7,6 @@ import RightArrow from "../../assets/right-arrow.svg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { dataDigitalBestSeller } from "./data";
 
 const Card = ({ data }) => {
 	const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
@@ -16,7 +15,7 @@ const Card = ({ data }) => {
 			alt="prevArrow"
 			{...props}
 			className={
-				"p-5 shadow-lg rounded-full absolute -left-12 top-[40%] hover:scale-125 "
+				"p-3 md:p-5 shadow-lg rounded-full absolute -left-[5vw] md:-left-[3vw] top-[40%] hover:scale-125 "
 			}
 		/>
 	);
@@ -26,15 +25,13 @@ const Card = ({ data }) => {
 			alt="nextArrow"
 			{...props}
 			className={
-				"p-5 shadow-lg rounded-full absolute -right-12 top-[40%] hover:scale-125"
+				"p-3 md:p-5 shadow-lg rounded-full absolute  -right-[3.5vw] top-[40%] hover:scale-125"
 			}
 		/>
 	);
-	const imgGirl =
-		"https://ik.imagekit.io/workcations/gallery/triplist/meghalaya-kaziranga-exclusive/boating-in-meghalaya.jpg";
-	const [defaultImage, setDefaultImage] = useState({});
+
 	const settings = {
-		dots: true,
+		dots: false,
 		infinite: false,
 		speed: 500,
 		slidesToShow: 4,
@@ -46,37 +43,23 @@ const Card = ({ data }) => {
 			{
 				breakpoint: 1024,
 				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 2,
-					infinite: true,
-					dots: true,
+					slidesToShow: 3,
+					slidesToScroll: 1,
 				},
 			},
 			{
 				breakpoint: 600,
 				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 2,
-					initialSlide: 2,
-				},
-			},
-			{
-				breakpoint: 480,
-				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
+					initialSlide: 0,
 				},
 			},
+			
 		],
 	};
 
-	const handleErrorImage = (data) => {
-		setDefaultImage((prev) => ({
-			...prev,
-			[data.target.alt]: data.target.alt,
-			linkDefault: imgGirl,
-		}));
-	};
+
 
 	return (
 		<div className="carousel">
@@ -113,7 +96,7 @@ const Card = ({ data }) => {
 								<div className="">
 									<div className="day-location">
 										<img src="https://www.wanderon.in/svg/clock.svg" alt="" />
-										{item.date}
+										{item.day}
 									</div>
 									<div className="day-location">
 										<img src="https://www.wanderon.in/svg/map-pin.svg" alt="" />
@@ -124,6 +107,10 @@ const Card = ({ data }) => {
 								<div className="start">
 									<span>Start at</span>
 									<div className="">₹{item.price}</div>
+								</div>
+								<div className="date">
+									<img src="https://www.wanderon.in/svg/calendar.svg" alt="" />
+									{item.bookDate}
 								</div>
 							</div>
 						</div>

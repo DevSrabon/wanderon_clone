@@ -36,7 +36,7 @@ const Navbar = () => {
 		<nav
 			className={`${
 				navbar && "active"
-			} flex flex-row justify-between items-center h-[7vh] bg-transparent duration-500 ease-linear text-white sticky top-[0vh] z-50`}>
+			} flex flex-row justify-between items-center h-[7vh] bg-transparent duration-200 ease-out text-white sticky top-[0vh] z-50`}>
 			<div>
 				<img
 					src="https://www.wanderon.in/wanderon-logo.svg"

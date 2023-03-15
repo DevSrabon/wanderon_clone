@@ -7,7 +7,7 @@ const UpcommingTrips = () => {
 				url: "https://ik.imagekit.io/workcations/gallery/triplist/meghalaya-kaziranga-exclusive/boating-in-meghalaya.jpg",
 				imgTitle1: "Camping",
 				imgTitle2: "Trekking",
-				date: "6N-7D",
+				day: "6N-7D",
 				location: "Guwahati",
 				pkgName: "Meghalaya With Kaziranga - Exclusive Escape",
 				price: "27,999",
@@ -17,52 +17,73 @@ const UpcommingTrips = () => {
 				url: "https://ik.imagekit.io/workcations/gallery/triplist/kashmir-winter-backpacking/wanderon-kashmir-1.jpg",
 				imgTitle1: "Trekking",
 				imgTitle2: "Snow Paradise",
-				date: "6N-7D",
+				day: "5N-6D",
+				location: "Srinagar",
+				pkgName: "Kashmir Winter Expedition",
+				price: "26,499",
+				bookDate: "18, 25Mar",
+			},
+			{
+				url: "https://ik.imagekit.io/workcations/gallery/triplist/meghalaya-kaziranga-exclusive/boating-in-meghalaya.jpg",
+				imgTitle1: "Camping",
+				imgTitle2: "Trekking",
+				day: "6N-7D",
 				location: "Guwahati",
 				pkgName: "Meghalaya With Kaziranga - Exclusive Escape",
 				price: "27,999",
 				bookDate: "25Mar",
 			},
 			{
+				url: "https://ik.imagekit.io/workcations/gallery/triplist/kashmir-winter-backpacking/wanderon-kashmir-1.jpg",
+				imgTitle1: "Trekking",
+				imgTitle2: "Snow Paradise",
+				day: "5N-6D",
+				location: "Srinagar",
+				pkgName: "Kashmir Winter Expedition",
+				price: "26,499",
+				bookDate: "18, 25Mar",
+			},
+			{
 				url: "https://ik.imagekit.io/workcations/gallery/triplist/meghalaya-kaziranga-exclusive/boating-in-meghalaya.jpg",
 				imgTitle1: "Camping",
 				imgTitle2: "Trekking",
-				date: "6N-7D",
+				day: "6N-7D",
 				location: "Guwahati",
 				pkgName: "Meghalaya With Kaziranga - Exclusive Escape",
 				price: "27,999",
 				bookDate: "25Mar",
 			},
 			{
+				url: "https://ik.imagekit.io/workcations/gallery/triplist/kashmir-winter-backpacking/wanderon-kashmir-1.jpg",
+				imgTitle1: "Trekking",
+				imgTitle2: "Snow Paradise",
+				day: "5N-6D",
+				location: "Srinagar",
+				pkgName: "Kashmir Winter Expedition",
+				price: "26,499",
+				bookDate: "18, 25Mar",
+			},
+			{
 				url: "https://ik.imagekit.io/workcations/gallery/triplist/meghalaya-kaziranga-exclusive/boating-in-meghalaya.jpg",
 				imgTitle1: "Camping",
 				imgTitle2: "Trekking",
-				date: "6N-7D",
+				day: "6N-7D",
 				location: "Guwahati",
 				pkgName: "Meghalaya With Kaziranga - Exclusive Escape",
 				price: "27,999",
 				bookDate: "25Mar",
 			},
 			{
-				url: "https://ik.imagekit.io/workcations/gallery/triplist/meghalaya-kaziranga-exclusive/boating-in-meghalaya.jpg",
-				imgTitle1: "Camping",
-				imgTitle2: "Trekking",
-				date: "6N-7D",
-				location: "Guwahati",
-				pkgName: "Meghalaya With Kaziranga - Exclusive Escape",
-				price: "27,999",
-				bookDate: "25Mar",
+				url: "https://ik.imagekit.io/workcations/gallery/triplist/kashmir-winter-backpacking/wanderon-kashmir-1.jpg",
+				imgTitle1: "Trekking",
+				imgTitle2: "Snow Paradise",
+				day: "5N-6D",
+				location: "Srinagar",
+				pkgName: "Kashmir Winter Expedition",
+				price: "26,499",
+				bookDate: "18, 25Mar",
 			},
-			{
-				url: "https://ik.imagekit.io/workcations/gallery/triplist/meghalaya-kaziranga-exclusive/boating-in-meghalaya.jpg",
-				imgTitle1: "Camping",
-				imgTitle2: "Trekking",
-				date: "6N-7D",
-				location: "Guwahati",
-				pkgName: "Meghalaya With Kaziranga - Exclusive Escape",
-				price: "27,999",
-				bookDate: "25Mar",
-			},
+			
 		];
     return (
 			<section className="upcoming-section">
@@ -75,10 +96,26 @@ const UpcommingTrips = () => {
 							<option value="2">may '23</option>
 						</select>
 					</div>
-            </div>
-            <div className="swiper-container">
-                <Card data={data}/>
-            </div>
+				</div>
+				<div className="swiper-container">
+					<Card data={data} />
+				</div>
+				<div className="upcoming-heading mt-[3vw]">
+					<div className="upcoming">
+						<h3>Backpacking Trips 2023</h3>
+					</div>
+				</div>
+				<div className="swiper-container">
+					<Card data={data} />
+				</div>
+				<div className="upcoming-heading mt-[3vw]">
+					<div className="upcoming">
+						<h3>Weekend Trips 2023</h3>
+					</div>
+				</div>
+				<div className="swiper-container">
+					<Card data={data} />
+				</div>
 			</section>
 		);
 };
