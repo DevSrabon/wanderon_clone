@@ -15,18 +15,18 @@ const ScrollToApp = () => {
 	}, []);
     return (
 			<>
-				{showScrollApp && (
+				
 					<a
 						rel="noreferrer"
 						href="https://wa.me/01864361681"
 						target={"_blank"}
-						className="btn-position">
+						className={`${showScrollApp && "btn-position"} btn-hidden`}>
 						<img
 							src="https://www.wanderon.in/svg/call-icon/whatsapp.svg"
 							alt=""
 						/>
 					</a>
-				)}
+				
 			</>
 		);
 };
