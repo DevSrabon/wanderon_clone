@@ -33,6 +33,10 @@
     -webkit-box-pack: justify;
     justify-content: space-between;
     height: 9vw;
+    transition: transform 0.5s ease-in-out;
+}
+.explore-card:hover {
+    transform: scale(1.1);
 }
 .explore-card>img {
             height: 5vw ;
