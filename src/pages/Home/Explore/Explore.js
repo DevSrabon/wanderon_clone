@@ -34,15 +34,13 @@ const Explore = () => {
 			<div className="explore-card-container">
 				{data.map((item, i) => {
 					return (
-						<>
 						<Link to={""} key={i}>
 							{" "}
 							<div className="explore-card">
 								<img src={item.img} alt="" /> <p className="">{item.text}</p>
 							</div>{" "}
-						<div className="divider2"></div>
 						</Link>
-						<div className="divider"></div></>
+						
 					);
 				})}
 			</div>

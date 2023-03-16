@@ -1,0 +1,51 @@
+@media screen and (min-width: 600px) {.experience_heading {
+    font-size: 1.5vw;
+    margin: 32px 0px 24px;
+}}
+
+.experience_heading {
+    
+    font-weight: 400;
+    color: rgb(58, 58, 58);
+    margin: 24px 0px 16px;
+    text-align: center;
+}
+.review_slider{
+    display: flex;
+    justify-content: space-evenly;
+
+        flex-direction: row;
+        -webkit-box-align: center;
+        align-items: center;
+        margin-bottom: 16px;
+}
+.review_div {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.start_review {
+    display: flex;
+    flex-direction: row;
+    margin: 8px 0px 4px;
+}
+.start_review>img {
+    height: 2vw;
+    margin-right: 4px;
+}
+.start_review>div {
+    font-size: 2vw;
+    font-weight: 400;
+    color: rgba(58, 58, 58, 0.8);
+}
+
+
+.review_text {
+    font-size: 1vw;
+    font-weight: 400;
+    color: rgba(58, 58, 58, 0.8);
+}
+@media screen and (max-width: 600px) {.review_text {
+    font-size: 2.5vw;
+}}
