@@ -1,0 +1,91 @@
+
+.trip_card_container{
+    width: 84%;
+        margin: 0 auto;
+        margin-top: 5px;
+        position: relative;
+        border-radius: 25px;
+}
+.slick-slide>div {
+    margin: 0 10px;
+}
+
+.slick-list {
+    margin: 0 -10px;
+}
+.trip_card:hover {
+    transform: scale(1.05);
+    transition: scale 0.2s ease 0s;
+}
+
+.trip_card {
+    width: 23vw;
+    height: 30vw;
+    flex-shrink: 0;
+    background: linear-gradient(to right, rgb(213, 213, 213) 0%, rgb(241, 241, 241) 20%, rgb(213, 213, 213) 40%, rgb(213, 213, 213) 100%) center center / cover no-repeat rgb(213, 213, 213);
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    position: relative;
+    border-radius: 0.8vw;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 6px 6px;
+    margin: 2vw 1vw;
+}
+
+.trip_card-div {
+    width: 23vw;
+    height: 30vw;
+    flex-shrink: 0;
+    /* background-image: linear-gradient(to top, rgba(58, 58, 58, 0.2) 0%, rgba(0, 0, 0, 0) 100%),
+        url(https://ik.imagekit.io/workcations/gallery/triplist/lempuyang-temple-1.jpg); */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.8vw;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 6px 6px;
+}
+.trip_card_top {
+    font-size: 2vw;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    width: 19vw;
+    height: 4vw;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: rgba(58, 58, 58, 0.2);
+    border: 1px solid white;
+    margin-bottom: 5vw;
+}
+ @media screen and (max-width:600px) {
+     .trip_card_container {
+         width: 48%;
+        
+
+     }
+
+     .trip_card-div {
+         height: 30vw;
+         width: 40vw;
+     }
+
+     .card-div>div {
+         height: 30vw;
+         width: 40vw;
+     }
+ }

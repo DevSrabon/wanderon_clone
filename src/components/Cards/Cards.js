@@ -1,9 +1,6 @@
-import React, { useState } from "react";
 import "./Cards.css";
-
 import LeftArrow from "../../assets/left-arrow.svg";
 import RightArrow from "../../assets/right-arrow.svg";
-
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -15,7 +12,7 @@ const Card = ({ data }) => {
 			alt="prevArrow"
 			{...props}
 			className={
-				"p-3 md:p-5 shadow-lg rounded-full absolute -left-[5vw] md:-left-[3vw] top-[40%] hover:scale-125 "
+				"p-3 md:p-5 shadow-lg rounded-full absolute -left-[8vw] md:-left-[3vw] top-[40%] hover:scale-125 "
 			}
 		/>
 	);
