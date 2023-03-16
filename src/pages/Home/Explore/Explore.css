@@ -54,6 +54,11 @@
 }
 
 @media screen and (max-width:600px) {
+    .explore-container>h1 {
+           
+            font-size: 4.2vw;
+            
+        }
     .explore-container {
 
         margin-top: 28px;
@@ -63,4 +68,28 @@
 
         margin-top: 24px;
     }
+        .explore-card{
+            height: 18vw;
+        }
+        .explore-card>img{
+                width: 10vw;
+                    font-size: 2.5vw;
+                    font-weight: 400;
+        }
+        .explore-card>p{
+            height: 10vw;
+            font-size: 1.5vw;
+        }
+        .divider:nth-child(2n){
+                height: 19vw;
+                    width: 1px;
+                    background-color: rgba(58, 58, 58, 0.2);
+                    align-self: flex-end;
+        }
+        .divider2:nth-last-child(1){
+                height: 1px;
+                    width: 27vw;
+                    background-color: rgba(58, 58, 58, 0.2);
+                    align-self: flex-end;
+        }
 }

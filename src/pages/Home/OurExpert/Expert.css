@@ -2,6 +2,41 @@
     @media screen and (min-width: 768px) {.expert-section {
             margin-top: 64px;
         }}
+    @media screen and (max-width: 600px) {
+        .expert-container {
+            display: flex !important;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            padding: 6.5vw 4vw;
+        }
+        .expert-heading {
+           
+            width: 32vw;
+            font-size: 2vw !important;
+           
+        }
+    
+           .expert-text {
+               grid-area: btn / btn / btn / btn;
+               font-size: 1.5vw !important;
+               font-weight: 400;
+               color: white;
+               width: 19vw !important;
+               height: 4vw;
+              
+           }
+    
+        .ex_text {
+         
+            font-size: 1.3vw !important;
+            
+        }
+    
+        .expert_img {
+            grid-area: images / images / images / images;
+            height: 28vw !important;
+            justify-self: end;
+        }}
     
         .expert-section {
             background-image: url(https://www.wanderon.in/svg/home/cta.svg);
