@@ -74,14 +74,13 @@
 }
  @media screen and (max-width:600px) {
      .trip_card_container {
-         width: 48%;
-        
+         width: 86%;
 
      }
 
      .trip_card-div {
          height: 30vw;
-         width: 40vw;
+         width: 100%;
      }
 
      .card-div>div {

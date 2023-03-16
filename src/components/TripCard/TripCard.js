@@ -12,7 +12,7 @@ const TripCard = ({ data }) => {
 			alt="prevArrow"
 			{...props}
 			className={
-				"p-3 md:p-5 shadow-lg rounded-full absolute -left-[7vw] md:-left-[5.5vw] top-[40%] hover:scale-125 "
+				"p-3 md:p-5 shadow-lg rounded-full absolute -left-[7vw] md:-left-[3.5vw] top-[40%] hover:scale-125"
 			}
 		/>
 	);
