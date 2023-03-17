@@ -27,7 +27,7 @@
     margin-top: 32px;
     padding: 16px 6px;
 }
-@media screen and (max-width:600px){
+@media screen and (max-width: 600px) {
 .customize_container>div {
         margin-top: 0;
         padding: 0;

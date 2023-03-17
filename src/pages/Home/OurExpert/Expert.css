@@ -2,7 +2,7 @@
     @media screen and (min-width: 768px) {.expert-section {
             margin-top: 64px;
         }}
-    @media screen and (max-width: 600px) {
+                @media screen and (max-width: 600px) {
         .expert-container {
             display: flex !important;
             flex-direction: row-reverse;

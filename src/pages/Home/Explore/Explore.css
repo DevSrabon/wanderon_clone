@@ -53,7 +53,7 @@
     text-align: center;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
     .explore-container>h1 {
            
             font-size: 4.2vw;
