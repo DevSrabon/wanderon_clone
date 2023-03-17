@@ -21,7 +21,9 @@ const UpcommingTrips = () => {
 			setSelectedOption(event.target.value);
 		}
 	
-	
+	if (isLoading) {
+		return <>loading..</>;
+	}
     return (
 			<section className="upcoming-section">
 				<div className="upcoming-heading">

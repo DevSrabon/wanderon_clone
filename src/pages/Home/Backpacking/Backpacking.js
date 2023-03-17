@@ -13,6 +13,9 @@ const Backpacking = () => {
 					return data;
 				},
           });
+    if (isLoading) {
+        return <>loading..</>
+    }
     return (
 			<section className="upcoming-section">
 				<div className="upcoming-heading mt-[3vw]">

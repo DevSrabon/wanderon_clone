@@ -2,7 +2,7 @@ import React from 'react';
 import "./Experience.css"
 const Experience = () => {
     return (
-			<div>
+			<section id='reviews'>
 				<h4 className="experience_heading">
 					Get ready for 5-star Experiences with us
 				</h4>
@@ -59,7 +59,7 @@ const Experience = () => {
 						</div>
 					</a>
 				</div>
-			</div>
+			</section>
 		);
 };
 
