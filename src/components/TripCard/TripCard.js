@@ -60,14 +60,14 @@ const TripCard = ({ data }) => {
 
 		<Slider {...settings}>
 			{data?.map((item) => (
-				<div className="trip_card">
+				<div key={item?._id} className="trip_card">
 					<div
 						className="trip_card-div"
 						style={{
-							backgroundImage: `linear-gradient(to top, rgb(58, 58, 58) 0%, rgba(58, 58, 58, 0.5) 15%, rgba(58, 58, 58, 0) 25%, rgba(58, 58, 58, 0) 100%), url(${item.url})`,
+							backgroundImage: `linear-gradient(to top, rgb(58, 58, 58) 0%, rgba(58, 58, 58, 0.5) 15%, rgba(58, 58, 58, 0) 25%, rgba(58, 58, 58, 0) 100%), url(${item?.url})`,
 						}}>
 							<div className="trip_card_top">
-								{item.title}
+								{item?.title}
 							</div>
 						
 					</div>

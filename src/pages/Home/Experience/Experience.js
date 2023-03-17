@@ -21,7 +21,7 @@ const Experience = () => {
 								<img src="https://www.wanderon.in/svg/star.svg" alt="" />
 								<div className="">4.9</div>
 							</div>
-							<div class="review_text">(6061 reviews)</div>
+							<div className="review_text">(6061 reviews)</div>
 						</div>
 					</a>
 					<a
@@ -38,7 +38,7 @@ const Experience = () => {
 								<img src="https://www.wanderon.in/svg/star.svg" alt="" />
 								<div className="">5</div>
 							</div>
-							<div class="review_text">(1922 reviews)</div>
+							<div className="review_text">(1922 reviews)</div>
 						</div>
 					</a>
 					<a
@@ -55,7 +55,7 @@ const Experience = () => {
 								<img src="https://www.wanderon.in/svg/star.svg" alt="" />
 								<div className="">4.9</div>
 							</div>
-							<div class="review_text">(645 reviews)</div>
+							<div className="review_text">(645 reviews)</div>
 						</div>
 					</a>
 				</div>

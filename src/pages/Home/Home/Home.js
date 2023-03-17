@@ -8,6 +8,7 @@ import OurExpert from "../OurExpert/OurExpert";
 import SecretSauce from "../SecretSauce/SecretSauce";
 import UpcommingTrips from "../UpcomingTrips/UpcommingTrips";
 import Experience from "../Experience/Experience";
+import Backpacking from "../Backpacking/Backpacking";
 
 const Home = () => {
 	return (
@@ -15,6 +16,7 @@ const Home = () => {
 			<Banner />
 			<Explore />
 			<UpcommingTrips />
+			<Backpacking/>
 			<OurExpert />
 			<CustomiseTrips />
 			<SecretSauce />

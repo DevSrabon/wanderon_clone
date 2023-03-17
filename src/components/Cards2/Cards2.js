@@ -1,11 +1,11 @@
-import "./Cards.css";
+import "../Cards/Cards.css";
 import LeftArrow from "../../assets/left-arrow.svg";
 import RightArrow from "../../assets/right-arrow.svg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const Card = ({ data, backpack }) => {
+const Card2 = ({  backpack }) => {
 	const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
 		<img
 			src={LeftArrow}
@@ -58,7 +58,7 @@ const Card = ({ data, backpack }) => {
 	return (
 		<div className="carousel">
 			<Slider {...settings}>
-				{data?.map((item) => (
+				{backpack?.map((item) => (
 					<div className="card hover:scale-105 duration-200 ease-linear">
 						<div className="card-div">
 							<div
@@ -114,4 +114,4 @@ const Card = ({ data, backpack }) => {
 		</div>
 	);
 };
-export default Card;
+export default Card2;

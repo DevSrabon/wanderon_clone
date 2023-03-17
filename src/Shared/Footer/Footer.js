@@ -33,10 +33,10 @@ const Footer = () => {
 						<div className="footer_trip">
 							<a
 								href="/backpacking-trips"
-								class="Footer__FooterHeading-sc-1f24jl1-6 eMPtyM">
+								className="Footer__FooterHeading-sc-1f24jl1-6 eMPtyM">
 								Backpacking Trips
 							</a>
-							<div class="Footer__FooterList-sc-1f24jl1-8 cDRmcQ">
+							<div className="Footer__FooterList-sc-1f24jl1-8 cDRmcQ">
 								<a href="/trip/himachal-backpacking-year-end">
 									Himachal Backpacking
 								</a>
@@ -51,10 +51,10 @@ const Footer = () => {
 						<div className="footer_trip">
 							<a
 								href="/himalayan-escapades"
-								class="Footer__FooterHeading-sc-1f24jl1-6 eMPtyM">
+								className="Footer__FooterHeading-sc-1f24jl1-6 eMPtyM">
 								Himalayan Escapades
 							</a>
-							<div class="Footer__FooterList-sc-1f24jl1-8 cDRmcQ">
+							<div className="Footer__FooterList-sc-1f24jl1-8 cDRmcQ">
 								<a href="/trip/kasol-kheerganga-manali">Kasol Manali</a>
 								<a href="/trip/parvati-valley-summer">Parvati Valley</a>
 								<a href="/trip/bir-kasol-kheerganga">Bir Kasol</a>
@@ -65,10 +65,10 @@ const Footer = () => {
 						<div className="footer_trip">
 							<a
 								href="/blogs"
-								class="Footer__FooterHeading-sc-1f24jl1-6 eMPtyM">
+								className="Footer__FooterHeading-sc-1f24jl1-6 eMPtyM">
 								Blogs
 							</a>
-							<div class="Footer__FooterList-sc-1f24jl1-8 cDRmcQ">
+							<div className="Footer__FooterList-sc-1f24jl1-8 cDRmcQ">
 								<a href="/blogs/places-to-visit-in-spring">
 									Beautiful Places to Visit in Spring in India
 								</a>
@@ -92,25 +92,27 @@ const Footer = () => {
 						<div className="">
 							<a
 								href="/privacy-policy"
-								class="Footer__FooterHeading-sc-1f24jl1-6 eMPtyM">
+								className="Footer__FooterHeading-sc-1f24jl1-6 eMPtyM">
 								Privacy Policy
 							</a>
 							<a
 								href="/cancellation-policy"
-								class="Footer__FooterHeading-sc-1f24jl1-6 eMPtyM">
+								className="Footer__FooterHeading-sc-1f24jl1-6 eMPtyM">
 								Cancellation Policy
 							</a>
-							<a href="/tnc" class="Footer__FooterHeading-sc-1f24jl1-6 eMPtyM">
+							<a
+								href="/tnc"
+								className="Footer__FooterHeading-sc-1f24jl1-6 eMPtyM">
 								Terms &amp; Conditions
 							</a>
 							<a
 								href="/disclaimer"
-								class="Footer__FooterHeading-sc-1f24jl1-6 eMPtyM">
+								className="Footer__FooterHeading-sc-1f24jl1-6 eMPtyM">
 								Disclaimer
 							</a>
 							<a
 								href="/about-us"
-								class="Footer__FooterHeading-sc-1f24jl1-6 eMPtyM">
+								className="Footer__FooterHeading-sc-1f24jl1-6 eMPtyM">
 								About Us
 							</a>
 						</div>
@@ -120,56 +122,58 @@ const Footer = () => {
 					<div className="">
 						<a
 							href="https://www.facebook.com/wander.on"
-							class="Footer__SocialLink-sc-1f24jl1-14 hLVdCZ">
+							className="Footer__SocialLink-sc-1f24jl1-14 hLVdCZ">
 							<img
 								alt=""
 								src="https://www.wanderon.in/svg/footer/facebook.svg"
-								class="Footer__SocialObject-sc-1f24jl1-15 ibNCRl"
+								className="Footer__SocialObject-sc-1f24jl1-15 ibNCRl"
 							/>
 						</a>
 						<a
 							href="https://www.instagram.com/wander.on/"
-							class="Footer__SocialLink-sc-1f24jl1-14 hLVdCZ">
+							className="Footer__SocialLink-sc-1f24jl1-14 hLVdCZ">
 							<img
 								alt=""
 								src="https://www.wanderon.in/svg/footer/instagram.svg"
-								class="Footer__SocialObject-sc-1f24jl1-15 ibNCRl"
+								className="Footer__SocialObject-sc-1f24jl1-15 ibNCRl"
 							/>
 						</a>
 						<a
 							href="https://in.pinterest.com/pin/801851908642464419"
-							class="Footer__SocialLink-sc-1f24jl1-14 hLVdCZ">
+							className="Footer__SocialLink-sc-1f24jl1-14 hLVdCZ">
 							<img
 								alt=""
 								src="https://www.wanderon.in/svg/footer/pinterest.svg"
-								class="Footer__SocialObject-sc-1f24jl1-15 ibNCRl"
+								className="Footer__SocialObject-sc-1f24jl1-15 ibNCRl"
 							/>
 						</a>
 						<a
 							href="https://www.linkedin.com/company/wanderontravelcommunity"
-							class="Footer__SocialLink-sc-1f24jl1-14 hLVdCZ">
+							className="Footer__SocialLink-sc-1f24jl1-14 hLVdCZ">
 							<img
 								alt=""
 								src="https://www.wanderon.in/svg/footer/linkedin.svg"
-								class="Footer__SocialObject-sc-1f24jl1-15 ibNCRl"
+								className="Footer__SocialObject-sc-1f24jl1-15 ibNCRl"
 							/>
 						</a>
 						<a
 							href="https://www.youtube.com/c/WanderOn/"
-							class="Footer__SocialLink-sc-1f24jl1-14 hLVdCZ">
+							className="Footer__SocialLink-sc-1f24jl1-14 hLVdCZ">
 							<img
 								alt=""
 								src="https://www.wanderon.in/svg/footer/youtube.svg"
-								class="Footer__SocialObject-sc-1f24jl1-15 ibNCRl"
+								className="Footer__SocialObject-sc-1f24jl1-15 ibNCRl"
 							/>
 						</a>
 					</div>
 					<div className="">
-						<div class="Footer__AddressTitle-sc-1f24jl1-17 ihYVFb">address</div>
-						<div class="Footer__AddressText-sc-1f24jl1-18 jGTbPl">
+						<div className="Footer__AddressTitle-sc-1f24jl1-17 ihYVFb">
+							address
+						</div>
+						<div className="Footer__AddressText-sc-1f24jl1-18 jGTbPl">
 							WANDERON EXPERIENCES PVT LTD
 						</div>
-						<div class="Footer__AddressText-sc-1f24jl1-18 jGTbPl">
+						<div className="Footer__AddressText-sc-1f24jl1-18 jGTbPl">
 							3rd Floor, Building No-750, Phase V, Udyog Vihar, Sector-19,
 							Gurugram, Haryana-122022
 						</div>
@@ -177,17 +181,17 @@ const Footer = () => {
 					<div className="">
 						<a
 							href="mailto:hello@wanderon.in"
-							class="Footer__ContactsObject-sc-1f24jl1-20 kSOouz">
+							className="Footer__ContactsObject-sc-1f24jl1-20 kSOouz">
 							hello@wanderon.in
 						</a>
 						<a
 							href="tel:9870301533"
-							class="Footer__ContactsObject-sc-1f24jl1-20 kSOouz">
+							className="Footer__ContactsObject-sc-1f24jl1-20 kSOouz">
 							+91-9870301533
 						</a>
 						<a
 							href='https://www.wanderon.infalse ? campaignParams : ""'
-							class="Footer__ContactsObject-sc-1f24jl1-20 kSOouz">
+							className="Footer__ContactsObject-sc-1f24jl1-20 kSOouz">
 							www.wanderon.in
 						</a>
 					</div>

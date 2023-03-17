@@ -11,19 +11,19 @@ const SecretCard = () => {
 				{...props}
 				viewBox="0 0 32 32"
 				aria-hidden="true"
-				class="SecretSauce__LeftArrow-fcwgqy-3 bttbMG">
+				className="SecretSauce__LeftArrow-fcwgqy-3 bttbMG">
 				<path d="M14.19 16.005l7.869 7.868-2.129 2.129-9.996-9.997L19.937 6.002l2.127 2.129z"></path>
 			</svg>
 		);
-	const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
-		<svg
-			{...props}
-			viewBox="0 0 32 32"
-			aria-hidden="true"
-			class="SecretSauce__RightArrow-fcwgqy-4 cVVDsC">
-			<path d="M18.629 15.997l-7.083-7.081L13.462 7l8.997 8.997L13.457 25l-1.916-1.916z"></path>
-		</svg>
-	);
+		const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
+			<svg
+				{...props}
+				viewBox="0 0 32 32"
+				aria-hidden="true"
+				className="SecretSauce__RightArrow-fcwgqy-4 cVVDsC">
+				<path d="M18.629 15.997l-7.083-7.081L13.462 7l8.997 8.997L13.457 25l-1.916-1.916z"></path>
+			</svg>
+		);
 
 	const settings = {
 		dots: true,
