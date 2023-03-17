@@ -8,7 +8,7 @@ const Banner = () => {
 		queryKey: [selectedOption],
 		queryFn: async () => {
 			const res = fetch(
-				`http://localhost:5000/searchone?pkgName=${
+				`https://wanderon-sever-clone.vercel.app/searchone?pkgName=${
 					selectedOption ? selectedOption : ""
 				}`
 			);
