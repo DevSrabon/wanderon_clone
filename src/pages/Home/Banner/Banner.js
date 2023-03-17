@@ -1,7 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Banner.css";
 import Typewriter from "typewriter-effect";
+import { useQuery } from "@tanstack/react-query";
 const Banner = () => {
+	const [selectedOption, setSelectedOption] = useState("");
+	const { data, isLoading } = useQuery({
+		queryKey: [selectedOption],
+		queryFn: async () => {
+			const res = fetch(
+				`http://localhost:5000/searchone?pkgName=${
+					selectedOption ? selectedOption : ""
+				}`
+			);
+			const data = (await res).json();
+			return data;
+		},
+	});
+	
+	
+	const handleSelectChange = (event) => {
+		setSelectedOption(event.target.value);
+	};
+
+	
 	return (
 		<div className="billy">
 			<div className="heading">India's Coolest Travel Community</div>
@@ -21,6 +42,7 @@ const Banner = () => {
 			<div className="search-container">
 				<div className="search-field">
 					<input
+						onChange={handleSelectChange}
 						type="input"
 						autoComplete="off"
 						name="search"
@@ -31,6 +53,14 @@ const Banner = () => {
 						alt=""
 						className=" w-[10vw] h-[10vw] sm:w-[4vw] sm:h-[4vw] rounded-r-md -ml-[4vw] bg-[#0a9e88]"
 					/>
+				</div>
+				<div className="eiHLdy">
+					{
+						data?.map(item =>
+							
+							<div className="haakOc">{item?.pkgName}</div>
+							)
+						}
 				</div>
 			</div>
 			<div className="images-container flex mb-[6vh]">
