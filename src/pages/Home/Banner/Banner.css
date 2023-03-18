@@ -96,11 +96,8 @@ display: flex;
 }
 @media screen and (max-width: 600px) {
     .billy{
-        height: 80vh;
-            margin-top: -10vh;
-                padding-bottom: 10vh;
-                width: 100%;
-                overflow: hidden;
+        height: 95vh;
+        width: 100%;
     }
 
     .heading {
