@@ -3,14 +3,14 @@ import React, { useState } from 'react';
 import Card from '../../../components/Cards/Cards';
 import "./UpcommingTrips.css"
 const UpcommingTrips = () => {
-	const [selectedOption, setSelectedOption] = useState("");
+	const [selectedOption, setSelectedOption] = useState("0");
 	
    	const { data, isLoading } = useQuery({
 			queryKey: [ selectedOption],
 			queryFn: async () => {
 				const res = fetch(
 					`https://wanderon-sever-clone.vercel.app/upcoming?option=${
-						selectedOption ? selectedOption : "0"
+						selectedOption ? selectedOption : ""
 					}`
 				);
 				const data = (await res).json();
