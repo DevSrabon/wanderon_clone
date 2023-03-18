@@ -1,6 +1,3 @@
-import LeftArrow from "../../assets/left-arrow.svg";
-import RightArrow from "../../assets/right-arrow.svg";
-import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

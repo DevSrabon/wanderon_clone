@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Banner.css";
 import Typewriter from "typewriter-effect";
 import { useQuery } from "@tanstack/react-query";
 const Banner = () => {
 	const [selectedOption, setSelectedOption] = useState("");
-	const { data, isLoading } = useQuery({
+	const { data } = useQuery({
 		queryKey: [selectedOption],
 		queryFn: async () => {
 			const res = fetch(
@@ -57,6 +57,7 @@ const Banner = () => {
 				<div className="eiHLdy">
 					{
 						data?.map(item =>
+							
 							
 							<div className="haakOc">{item?.pkgName}</div>
 							)
